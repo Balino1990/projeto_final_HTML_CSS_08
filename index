@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio - Bruno Alves</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header>
+        <a href="#sobre"><img id="logo" src="https://upload.wikimedia.org/wikipedia/commons/c/c7/B-logo-1.png" alt="Logo Bruno Alves"></a>
+        <nav>
+            <ul id="menu">
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="sobre">
+            <img id="fotoPerfil" src="https://img.freepik.com/fotos-gratis/programador-de-smiley-de-tiro-medio-dentro-de-casa_23-2149101154.jpg?semt=ais_hybrid&w=740" alt="Bruno Alves">
+            <div id="descricao-perfil">
+                <h1>Olá! Me chamo Bruno Alves</h1>
+                <p>Sou estudante de Programação FullStack na Infinity School e estou em transição de carreira para me tornar um desenvolvedor profissional.</p>
+                <p>Tenho paixão por aprender novas tecnologias e transformar ideias em soluções reais. Estou focado no desenvolvimento web e constantemente aprimorando minhas habilidades.</p>
+            </div>
+        </section>
+
+        <section id="habilidades">
+            <h3>Habilidades:</h3>
+            <div class="skills-container">
+                <img src="https://makersaid.com/wp-content/uploads/2022/08/html-vs-css-vs-python.png" alt="HTML CSS JavaScript" width="200px">
+                <div class="skills-texto">
+                    <p><strong>HTML, CSS e JavaScript</strong></p>
+                    <p>Utilizo HTML5 e CSS3 para construir layouts responsivos e acessíveis. Estou em processo de aprofundamento em JavaScript para criar experiências mais dinâmicas e interativas.</p>
+                    <p><strong>Python</strong></p>
+                    <p>Possuo conhecimentos básicos em Python, tendo utilizado a linguagem para desenvolver pequenos projetos e entender a lógica de programação.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="projetos">
+            <h3>Projetos:</h3>
+            <div id="lista-projetos">
+                <div class="projeto">
+                    <h4>🍰 Receita Fácil</h4>
+                    <p>Site fictício para exibição de receitas de bolo, usando HTML e CSS. Criado com foco em layout e estruturação semântica.</p>
+                </div>
+                <div class="projeto">
+                    <h4>🎨 Rota Solar</h4>
+                    <p>Projeto de site fictício sobre turismo, com uso de variáveis CSS e responsividade via media queries.</p>
+                </div>
+                <div class="projeto">
+                    <h4>📝 Formulário Responsivo</h4>
+                    <p>Formulário estilizado com pseudo-elementos, adaptado para múltiplos tamanhos de tela usando media queries.</p>
+                </div>
+                <div class="projeto">
+                    <h4>📦 Caixas Flexíveis</h4>
+                    <p>Exercício de Flexbox com três caixas centralizadas usando alinhamento horizontal e vertical.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="contato">
+            <h3>Entre em contato:</h3>
+            <div id="formulario-contato">
+                <form>
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+
+                    <button type="submit">Enviar</button>
+                    <button type="reset">Limpar</button>
+                </form>
+
+                <div id="redeSociais">
+                    <a href="https://whatsapp.me/+5585998257585">
+                        <img src="https://static.vecteezy.com/system/resources/previews/048/116/421/non_2x/whatsapp-popular-social-media-button-icon-instant-messenger-logo-of-whatsapp-free-png.png" alt="Whatsapp" width="60px">
+                    </a>
+                    <p>Converse comigo pelo WhatsApp</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p class="footer_copy">Portfólio © 2025 - Todos os direitos reservados</p>
+        <p class="footer_curso">Infinity School - Programação Fullstack</p>
+        <p class="footer_autor">Desenvolvido por Bruno Alves</p>
+    </footer>
+</body>
+</html>
