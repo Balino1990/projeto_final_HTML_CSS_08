@@ -1,0 +1,252 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f2f0f7;
+    color: #2e2e2e;
+}
+
+header {
+    background-color: #3b3054;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#logo {
+    height: 50px;
+}
+
+#menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+#menu li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+#menu li a:hover {
+    color: #ff6b6b;
+}
+
+main {
+    padding: 50px 20px;
+}
+
+section {
+    margin-bottom: 80px;
+}
+
+#sobre {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 60px;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+}
+
+#fotoPerfil {
+    width: 350px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+}
+
+#descricao-perfil {
+    max-width: 600px;
+}
+
+#descricao-perfil h1 {
+    font-size: 2.2em;
+    margin-bottom: 15px;
+    color: #2d3e50;
+}
+
+#descricao-perfil p {
+    margin-bottom: 12px;
+    font-size: 1.1em;
+}
+
+.skills-container {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+.skills-container img {
+    max-width: 280px;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.skills-texto {
+    flex: 1;
+    min-width: 250px;
+}
+
+.skills-texto p {
+    margin-bottom: 12px;
+    font-size: 1.05em;
+}
+
+#habilidades h3,
+#projetos h3,
+#contato h3 {
+    margin-bottom: 20px;
+    color: white;
+    background-color: #3b3054;
+    border-radius: 8px;
+    padding: 20px;
+    font-size: 1.4em;
+}
+
+#fsociety {
+    margin-top: 20px;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.05);
+}
+
+#fsociety img {
+    border-radius: 20px;
+    transition: transform 0.3s ease;
+}
+
+#fsociety img:hover {
+    transform: scale(1.06);
+}
+
+#formulario-contato label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+#formulario-contato input,
+#formulario-contato textarea {
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1em;
+    width: 100%;
+}
+
+#formulario-contato button {
+    padding: 12px;
+    border: none;
+    background-color: #3b3054;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 6px;
+    transition: background-color 0.3s;
+}
+
+#formulario-contato button:hover {
+    background-color: #2a213d;
+}
+
+#formulario-contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+#formulario-contato form {
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+/* WhatsApp fixo no canto inferior esquerdo */
+#redeSociais {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #25D366;
+    padding: 10px 15px;
+    border-radius: 50px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    color: white;
+    z-index: 1000;
+    transition: transform 0.3s;
+}
+
+#redeSociais img {
+    width: 32px;
+    height: 32px;
+}
+
+#redeSociais:hover {
+    transform: scale(1.05);
+}
+
+footer {
+    background-color: #3b3054;
+    color: #eee;
+    text-align: center;
+    padding: 30px 15px;
+    font-size: 0.95em;
+}
+
+footer p {
+    margin: 8px 0;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #sobre {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+
+    #menu {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    #fotoPerfil {
+        width: 280px;
+    }
+
+    .skills-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
